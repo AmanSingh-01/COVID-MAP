@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aman Corana Map</title>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  #map {
+    height: 100vh;
+    width: 100vw;
+  }
+</style>
+</head>
+
+
+<body>
+<div id='map'></div>
+</body>
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'>
+</script>
+
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hbS0wMSIsImEiOiJjbGxmNmE5ZG8wcDduM2VyeXVlc2VubTZ2In0.OFjvc7mXl5dXM3hWpJQOSw';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+/*style: 'mapbox://styles/mapbox/dark-v10'*/
+zoom: 1,
+center: [0, 20]
+});
+</script>
+
+
+<script src="script.js"></script>
+</html>
